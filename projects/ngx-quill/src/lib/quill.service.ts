@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { DOCUMENT } from '@angular/common'
-import { Injectable, Inject, Injector, Optional } from '@angular/core'
+import { Inject, Injectable, Injector, Optional } from '@angular/core'
 import { defer, firstValueFrom, isObservable, Observable } from 'rxjs'
 import { shareReplay } from 'rxjs/operators'
 
 import {
+  CustomModule,
   defaultModules,
   QUILL_CONFIG_TOKEN,
   QuillConfig,
-  CustomModule,
-} from 'ngx-quill/config'
+} from 'ap-ngx-quill/config'
 
 @Injectable({
   providedIn: 'root',
